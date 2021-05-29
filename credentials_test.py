@@ -19,9 +19,9 @@ class TestCredential(unittest.TestCase):
       '''  
 
       self.assertEqual(self.new_credential.account , "Twitter")  
-#       self.assertEqual(self.new_credential.username , "Tajeu2001")
-#       self.assertEqual(self.new_credential.password , "siantayo15")
+      self.assertEqual(self.new_credential.username , "Tajeu2001")
+      self.assertEqual(self.new_credential.password , "siantayo15")
 
 
-# if __name__ == '__main__':
-#     unittest.main()       
+if __name__ == '__main__':
+    unittest.main()       
