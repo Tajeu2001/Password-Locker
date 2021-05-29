@@ -18,8 +18,8 @@ class TestUser(unittest.TestCase):
       test_init test case to test if the object is initialized properly 
       '''  
 
-#       self.assertEqual(self.new_user.username , "Tajeu2001")  
-#       self.assertEqual(self.new_user.password , "siantayo15")
+      self.assertEqual(self.new_user.username , "Tajeu2001")  
+      self.assertEqual(self.new_user.password , "siantayo15")
 
-# if __name__ == '__main__':
-#     unittest.main()       
+if __name__ == '__main__':
+    unittest.main()       
