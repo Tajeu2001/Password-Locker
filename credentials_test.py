@@ -13,7 +13,7 @@ class TestCredential(unittest.TestCase):
       ''' 
       self.new_credential = Credential("Twitter", "Tajeu2001", "siantayo15")
 
-#     def test_init(self):
+    def test_init(self):
 #       '''
 #       test_init test case to test if the object is initialized properly 
 #       '''  
