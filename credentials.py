@@ -2,11 +2,11 @@
 Credentials class for creating user credentials
 '''
 
-# class Credential:
+class Credential:
 
-#     '''
-#     class used as a blueprint to generate other instances of user credentials
-#     '''
+    '''
+    class used as a blueprint to generate other instances of user credentials
+    '''
 
 #     credential_list = []
 
