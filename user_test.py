@@ -1,12 +1,12 @@
 import unittest
 from user import User
 
-# class TestUser(unittest.TestCase):
-#     '''
-#     Test class that defines test cases for the user class behaviour.
-#     Args:
-#         unittest.TestCase
-#     '''
+class TestUser(unittest.TestCase):
+    '''
+    Test class that defines test cases for the user class behaviour.
+    Args:
+        unittest.TestCase
+    '''
 #     def setUp(self):
 #       '''
 #       Set up method to run before each test case
