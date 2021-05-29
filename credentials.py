@@ -15,13 +15,13 @@ class Credential:
       method to define properties for the credential class object
       '''
       
-#       self.account = account
-#       self.username = username
-#       self.password = password
+      self.account = account
+      self.username = username
+      self.password = password
 
-#     def save_credential(self):
-#       '''
-#       method that adds a new user to the user list
-#       '''
+    def save_credential(self):
+      '''
+      method that adds a new user to the user list
+      '''
 
 #       Credential.credential_list.append(self)
