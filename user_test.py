@@ -7,10 +7,10 @@ class TestUser(unittest.TestCase):
     Args:
         unittest.TestCase
     '''
-#     def setUp(self):
-#       '''
-#       Set up method to run before each test case
-#       ''' 
+    def setUp(self):
+      '''
+      Set up method to run before each test case
+      ''' 
 #       self.new_user = User("Tajeu2001" , "siantayo15")
 
 #     def test_init(self):
