@@ -24,4 +24,4 @@ class Credential:
       method that adds a new user to the user list
       '''
 
-#       Credential.credential_list.append(self)
+      Credential.credential_list.append(self)
