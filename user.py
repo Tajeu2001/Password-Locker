@@ -2,7 +2,7 @@
 User class for the password locker account
 '''
 
-# class User:
+class User:
 
 #     '''
 #     class used as a blueprint to generate other user accounts
