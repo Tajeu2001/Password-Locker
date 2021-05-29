@@ -10,7 +10,7 @@ class Credential:
 
     credential_list = []
 
- #   def __init__(self,account,username,password):
+    def __init__(self,account,username,password):
       '''
       method to define properties for the credential class object
       '''
