@@ -10,7 +10,7 @@ class User:
 
     user_list = []
 
-#     def __init__ (self,username,password):
+    def __init__ (self,username,password):
 
 #       '''
 #       method to define properties for the user class objec
