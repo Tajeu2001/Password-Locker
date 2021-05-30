@@ -27,12 +27,12 @@ def save_credentials(credential):
     '''
     Credential.save_credential(self)
 
-# def generating_password():
-#     '''
-#     function to generate a password
-#     '''
-#     password = Credential.generate_password()  
-#     return password  
+def generating_password():
+    '''
+    function to generate a password
+    '''
+    password = Credential.generate_password()  
+    return password  
 
 
 
