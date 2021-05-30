@@ -86,20 +86,20 @@ def main():
                     2-Create a new credential - generated password
                     3-Display existing account credentials
                     ''')
-#                
-#                     print("Enter the username you want for the account:") 
-#                     cred_username = input() 
-#                     save_credentials(Credential(account, cred_username, (generating_password())))  
-#                     print(f"Your {account} credentials have been successfully created!")
+                
+                print("Enter the username you want for the account:") 
+                cred_username = input() 
+                save_credentials(Credential(account, cred_username, (generating_password())))  
+                print(f"Your {account} credentials have been successfully created!")
 
 
-#                 elif number == "3":
-#                     '''
-#                     Enables viewing of existing credentials
-#                     '''
-#                     view_credentials()    
+        elif number == "3":
+            '''
+            Enables viewing of existing credentials
+            '''
+            view_credentials()    
 
 
 
-# if __name__ == '__main__' :
-#         main()    
+if __name__ == '__main__' :
+        main()    
