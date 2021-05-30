@@ -36,17 +36,17 @@ class Credential:
       '''
       Credential.credential_list.remove(self)  
 
-    # @classmethod
-    # def generate_password(cls):
-    #   '''
-    #   Method that generates a random password
-    #   '''
-    #   size = 6
-    #   rand_password = string.ascii_uppercase + string.ascii_lowercase
-    #   password = ''.join(random.choice(rand_password) for num in range(size))  
+    @classmethod
+    def generate_password(cls):
+      '''
+      Method that generates a random password
+      '''
+      size = 6
+      rand_password = string.ascii_uppercase + string.ascii_lowercase
+      password = ''.join(random.choice(rand_password) for num in range(size))  
 
-    #   return password
-    #   print(password)
+      return password
+      print(password)
 
 
     # @classmethod
