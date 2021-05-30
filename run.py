@@ -14,12 +14,12 @@ def save_users(user):
     '''    
     user.save_user()
     
-# def create_credentials(self,account,cred_username,cred_password):
-#     '''
-#     function that creates new credential object
-#     '''
-#     new_credential = Credential(self,account, cred_username, cred_password)
-#     return new_credential
+def create_credentials(self,account,cred_username,cred_password):
+    '''
+    function that creates new credential object
+    '''
+    new_credential = Credential(self,account, cred_username, cred_password)
+    return new_credential
 
 # def save_credentials(credential):
 #     '''
