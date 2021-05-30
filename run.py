@@ -50,15 +50,15 @@ def main():
         ''')
         number = input()
 
-#         if number == "1":
-#             '''
-#             Creates a new password locker account 
-#             '''
-#             print("Provide username...")
-#             username = input()
+        if number == "1":
+            '''
+            Creates a new password locker account 
+            '''
+            print("Provide username...")
+            username = input()
             
-#             print("Provide password...")
-#             password = input()
+            print("Provide password...")
+            password = input()
 
 #             save_users(create_user_account(username ,password))
 #             print("Welcome to your new password locker account,your details are:" )
