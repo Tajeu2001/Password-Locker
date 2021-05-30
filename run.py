@@ -21,11 +21,11 @@ def create_credentials(self,account,cred_username,cred_password):
     new_credential = Credential(self,account, cred_username, cred_password)
     return new_credential
 
-# def save_credentials(credential):
-#     '''
-#     function to save new credentials
-#     '''
-#     Credential.save_credential(self)
+def save_credentials(credential):
+    '''
+    function to save new credentials
+    '''
+    Credential.save_credential(self)
 
 # def generating_password():
 #     '''
