@@ -60,10 +60,10 @@ def main():
             print("Provide password...")
             password = input()
 
-#             save_users(create_user_account(username ,password))
-#             print("Welcome to your new password locker account,your details are:" )
-#             print(f"Username: {username} , Password:{password}")
-#             print("You can now procced to log in to your account")
+            save_users(create_user_account(username ,password))
+            print("Welcome to your new password locker account,your details are:" )
+            print(f"Username: {username} , Password:{password}")
+            print("You can now procced to log in to your account")
 
 #         elif number == "2":
 #             '''
