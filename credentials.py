@@ -49,10 +49,10 @@ class Credential:
       print(password)
 
 
-    # @classmethod
-    # def view_credentials(cls):  
-    #   '''
-    #   method that allows users to view saved credentials in credentials list
-    #   '''
-    #   return cls.credential_list    
+    @classmethod
+    def view_credentials(cls):  
+      '''
+      method that allows users to view saved credentials in credentials list
+      '''
+      return cls.credential_list    
   
