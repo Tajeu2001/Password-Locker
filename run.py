@@ -8,11 +8,11 @@ def create_user_account(username , password):
     new_user = User(username ,password)
     return new_user
 
-# def save_users(user):
-#     '''
-#     function thats saves a created user account
-#     '''    
-#     user.save_user()
+def save_users(user):
+    '''
+    function thats saves a created user account
+    '''    
+    user.save_user()
     
 # def create_credentials(self,account,cred_username,cred_password):
 #     '''
