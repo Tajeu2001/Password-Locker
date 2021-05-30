@@ -24,3 +24,10 @@ class User:
       method that adds a new user to the user list
       '''
       User.user_list.append(self)
+
+    @classmethod
+    def user_exist(cls,username):
+
+      for user in cls.user_list:
+        if user.username == username:
+          return True
