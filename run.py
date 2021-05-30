@@ -35,6 +35,8 @@ def generating_password():
     return password  
 
 
+
+
 def main():
     '''
     The method that runs the whole password locker app
@@ -86,18 +88,40 @@ def main():
                     2-Create a new credential - generated password
                     3-Display existing account credentials
                     ''')
-                
-                print("Enter the username you want for the account:") 
-                cred_username = input() 
-                save_credentials(Credential(account, cred_username, (generating_password())))  
-                print(f"Your {account} credentials have been successfully created!")
+                number = input()
 
 
-        elif number == "3":
-            '''
-            Enables viewing of existing credentials
-            '''
-            view_credentials()    
+                if number == "1":
+                    '''
+                    creating a new credential using own password
+                    '''
+                    print("Enter the name of the account:")
+                    account = input()
+                    print("Enter the username you want for the account:")
+                    cred_username = input()
+                    print("Enter the password you desire:")
+                    cred_password = input()
+
+                    #save_credentials( create_credentials(self,account,cred_username,cred_password))
+                    #print(f"Your {account} credentials have been successfully created!")
+
+                elif number =="2" : 
+                    '''
+                    creating a new credential using generated password
+                    ''' 
+                    print("Enter the name of your account:")
+                    account = input() 
+                    print("Enter the username you want for the account:") 
+                    cred_username = input() 
+                    save_credentials(Credential(account, cred_username, (generating_password())))  
+                    print(f"Your {account} credentials have been successfully created!")
+
+
+                elif number == "3":
+                    '''
+                    Enables viewing of existing credentials
+                    '''
+                    view_credentials()    
 
 
 
