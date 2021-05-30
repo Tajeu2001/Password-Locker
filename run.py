@@ -35,22 +35,20 @@ def generating_password():
     return password  
 
 
-
-
-# def main():
-#     '''
-#     The method that runs the whole password locker app
-#     '''
-#     print("Welcome to password-locker!!!")
-#     print("Use the following options to access the service you want.")
+def main():
+    '''
+    The method that runs the whole password locker app
+    '''
+    print("Welcome to password-locker!!!")
+    print("Use the following options to access the service you want.")
     
     
-#     while True:
-#         print('''
-#         1-Create a new password locker account
-#         2-Login to your password account 
-#         ''')
-#         number = input()
+    while True:
+        print('''
+        1-Create a new password locker account
+        2-Login to your password account 
+        ''')
+        number = input()
 
 #         if number == "1":
 #             '''
