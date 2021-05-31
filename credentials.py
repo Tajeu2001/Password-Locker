@@ -50,7 +50,7 @@ class Credential:
 
 
     @classmethod
-    def view_credentials(cls):  
+    def view_credentials(cls,):  
       '''
       method that allows users to view saved credentials in credentials list
       '''
