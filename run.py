@@ -12,20 +12,32 @@ def save_users(user):
     '''
     function thats saves a created user account
     '''    
-    user.save_user()
+    User.save_user()
     
-def create_credentials(self,account,cred_username,cred_password):
+def create_credential(account,cred_username,cred_password):
     '''
     function that creates new credential object
     '''
-    new_credential = Credential(self,account, cred_username, cred_password)
+    new_credential = Credential(account, cred_username, cred_password)
     return new_credential
 
-def save_credentials(credential):
+def save_credential(credential):
     '''
     function to save new credentials
     '''
-    Credential.save_credential(self)
+    credential.save_credential()
+
+def del_credential(credential):
+    '''
+    function to delete a credential
+    ''' 
+    Credential.delete_credential(self) 
+
+def view_credentials():
+    ''' 
+    method that displays allexisting credentials
+    '''
+    return Credential.view_credentials()     
 
 def generating_password():
     '''
@@ -77,6 +89,8 @@ def main():
             print("Provide the password...")
             password = input()
 
+            print("Welcome to your  password locker account." )
+
             print("Use the following choices to navigate through credentials...")
             
             while True :
@@ -102,8 +116,8 @@ def main():
                     print("Enter the password you desire:")
                     cred_password = input()
 
-                    #save_credentials( create_credentials(self,account,cred_username,cred_password))
-                    #print(f"Your {account} credentials have been successfully created!")
+                    save_credential( create_credential(account,cred_username,cred_password))
+                    print(f"Your {account} credentials have been successfully created!")
 
                 elif number =="2" : 
                     '''
@@ -113,7 +127,7 @@ def main():
                     account = input() 
                     print("Enter the username you want for the account:") 
                     cred_username = input() 
-                    save_credentials(Credential(account, cred_username, (generating_password())))  
+                    save_credential(create_credential(account, cred_username, (generating_password())))  
                     print(f"Your {account} credentials have been successfully created!")
 
 
@@ -121,7 +135,17 @@ def main():
                     '''
                     Enables viewing of existing credentials
                     '''
-                    view_credentials()    
+                    if view_credentials() :
+                        print("Here is a list of all your credentials")
+
+                        for credential in view_credentials():
+                            print(f"Account-{credential.account}")
+                            print(f"Username- {credential.cred_username}") 
+                            print(f"Password- {credential.cred_password}")  
+
+
+                    else:
+                        print("you dont have any credentials saved yet")         
 
 
 
